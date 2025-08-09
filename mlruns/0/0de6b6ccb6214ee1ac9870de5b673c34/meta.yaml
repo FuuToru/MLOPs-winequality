@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/danghuutri/MLOPs-winequality/mlruns/0/0de6b6ccb6214ee1ac9870de5b673c34/artifacts
+end_time: 1754765919784
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0de6b6ccb6214ee1ac9870de5b673c34
+run_name: spiffy-asp-155
+run_uuid: 0de6b6ccb6214ee1ac9870de5b673c34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754765917611
+status: 3
+tags: []
+user_id: danghuutri

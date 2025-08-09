@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/danghuutri/MLOPs-winequality/mlruns/0/4d8b6b5966e348808b40b54427c7faef/artifacts
+end_time: 1754765713398
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4d8b6b5966e348808b40b54427c7faef
+run_name: receptive-worm-763
+run_uuid: 4d8b6b5966e348808b40b54427c7faef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754765711144
+status: 3
+tags: []
+user_id: danghuutri
