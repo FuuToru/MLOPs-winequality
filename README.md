@@ -1,6 +1,6 @@
-# fuutoru-mlops-winequality
+# mlops-winequality
 
-Dự án **fuutoru-mlops-winequality** triển khai quy trình **MLOps hoàn chỉnh** cho bài toán dự đoán **chất lượng rượu vang đỏ**. Hệ thống sử dụng mô hình **ElasticNet**, được tích hợp **MLflow** để theo dõi thí nghiệm, **Flask** để phục vụ dự đoán, **Docker** để đóng gói, và **GitHub Actions + AWS ECR** để tự động hóa CI/CD.
+Dự án **mlops-winequality** triển khai quy trình **MLOps hoàn chỉnh** cho bài toán dự đoán **chất lượng rượu vang đỏ**. Hệ thống sử dụng mô hình **ElasticNet**, được tích hợp **MLflow** để theo dõi thí nghiệm, **Flask** để phục vụ dự đoán, **Docker** để đóng gói, và **GitHub Actions + AWS ECR** để tự động hóa CI/CD.
 
 ---
 
@@ -81,8 +81,6 @@ python app.py  # mở tại http://localhost:8080
 * **Build image:** `docker build -t winequality:latest .`
 * **Chạy container:** `docker run -p 8080:8080 winequality:latest`
 
-> Image dựa trên `python:3.11-slim-bullseye` và tích hợp `awscli` để hỗ trợ CI/CD.
-
 ---
 
 ## 7. CI/CD với GitHub Actions + AWS ECR
@@ -94,14 +92,6 @@ Workflow CI/CD: [.github/workflows/main.yaml](https://github.com/FuuToru/MLOPs-w
 1. **Integration:** kiểm thử và lint.
 2. **Build & Push:** build image và đẩy lên AWS ECR.
 3. **Deployment:** runner self-hosted pull image và khởi chạy container.
-
-### Secrets cần thiết
-
-* `AWS_ACCESS_KEY_ID`
-* `AWS_SECRET_ACCESS_KEY`
-* `AWS_REGION`
-* `ECR_REPOSITORY_NAME`
-* `AWS_ECR_LOGIN_URI`
 
 ---
 
